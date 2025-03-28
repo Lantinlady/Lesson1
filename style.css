@@ -1,118 +1,114 @@
-*{
-
+* {
     margin: 0px;
-
     padding: 0px;
-
-    font-family:Arial, Helvetica, sans-serif, Calibri, 'Trebuchet MS', sans-serif;
-
+    font-family: Arial, Helvetica, sans-serif, Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/*This is a comment*/
-
-.box-1{
-
+/* Header Section */
+.box-1 {
     text-align: center;
-
     line-height: 40px;
-
-    background-color: #333;
-
+    background-color: #1a1a1a; /* Dark background */
     font-weight: bold;
-
     color: white;
-
-    padding: 5px 10px;
-
+    padding: 20px 0;
     transition: background-color 0.3s, color 0.3s;
-
-    margin-top: 0px;
-
-    padding: 30px 30px 30px 30px;
- 
 }
- 
-.box-2{
 
-    height: 10px;
+.box-1 h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
 
+.box-1 p {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/* Navigation Bar */
+.box-2 {
     text-align: center;
-
-    background-color: #555;
-
-    font-size: 12px;
-
+    background-color: #333; /* Slightly lighter than header */
+    font-size: 16px;
     font-weight: bold;
-
     color: white;
-
-    padding: 5px 10px 5px 10px;
-
+    padding: 10px 0;
     transition: background-color 0.3s, color 0.3s;
-
-    padding: 10px 10px 10px 10px;
- 
 }
- 
-.box-3{
 
-    margin: 15px 15px 15px 15px;
-
-    background-color: #F9F9F9;
-
-    color: black;
-
-    padding: 5px 10px 5px 10px;
-
-    transition: background-color 0.3s, color 0.3s;
-
-    padding: 10px 10px 10px 10px;
-
-    line-height: 40px;
-
-}
- 
-.texts{
-
-    margin: 15px 15px 15px 15px;
-
-    color: black;
-
-    padding: 5px 10px 5px 10px;
-
-    transition: background-color 0.3s, color 0.3s;
-
-    padding: 10px 10px 10px 10px;
- 
-}
- 
-.footer{
-
-    margin: 15px 15px 15px 15px;
-
-    text-align: center;
-
-    line-height: 40px;
-
-    background-color: #333;
-
-    font-weight: bold;
-
-    color: white;
-
-    padding: 5px 10px;
-
-    transition: background-color 0.3s, color 0.3s;
-
-    margin-top: 0px;
-
-    padding: 20px 20px 20px 20px;
- 
-}
- 
+/* Navigation Links */
 nav ul li {
-
     display: inline;
-
+    margin: 0 20px; /* Spacing between links */
 }
- 
+
+nav ul li a {
+    color: white;
+    text-decoration: none; /* No underline */
+}
+
+nav ul li a:hover {
+    color: #ccc; /* Light gray on hover */
+}
+
+/* Main Content Sections */
+.box-3 {
+    margin: 15px;
+    background-color: #f5f5f5; /* Light gray background */
+    color: black;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    line-height: 1.6;
+}
+
+/* Text Sections */
+.texts {
+    margin: 15px;
+    color: black;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #f5f5f5; /* Light gray background */
+}
+
+/* Two-Column Layout for Rows */
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+.column {
+    width: 48%; /* Two columns with a small gap */
+}
+
+/* Styling for Related Links Section */
+.texts.related-links {
+    background-color: #fff; /* White background */
+    margin: 0; /* Remove margin to align with the column */
+}
+
+.texts.related-links p a {
+    color: blue;
+    text-decoration: underline;
+}
+
+.texts.related-links p a:hover {
+    color: darkblue;
+}
+
+/* Remove margin for About Us and Latest News in the right column */
+.column .texts {
+    margin: 0 0 15px 0; /* Only bottom margin to separate About Us and Latest News */
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    line-height: 40px;
+    background-color: #1a1a1a; /* Matches header */
+    font-weight: bold;
+    color: white;
+    padding: 20px 0;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 14px;
+}
